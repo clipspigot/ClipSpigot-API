@@ -235,6 +235,11 @@ public enum Material {
     COAL_BLOCK(173),
     PACKED_ICE(174),
     DOUBLE_PLANT(175),
+    
+    SLIME_BLOCK(165), // ClipSpigot
+    PRISMARINE(168, MaterialData.class), // ClipSpigot
+    RED_SANDSTONE(179, Sandstone.class), // ClipSpigot
+    
     // ----- Item Separator -----
     IRON_SPADE(256, 1, 250),
     IRON_PICKAXE(257, 1, 250),
