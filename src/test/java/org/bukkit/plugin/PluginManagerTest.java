@@ -1,13 +1,15 @@
 package org.bukkit.plugin;
 
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.Matchers.empty;
+import static org.hamcrest.Matchers.instanceOf;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.nullValue;
+import static org.junit.Assert.assertThat;
 
 import org.bukkit.TestServer;
 import org.bukkit.event.Event;
 import org.bukkit.event.TestEvent;
 import org.bukkit.permissions.Permission;
-
 import org.junit.After;
 import org.junit.Test;
 

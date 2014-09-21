@@ -1,14 +1,18 @@
 package org.bukkit.configuration;
 
-import java.util.LinkedHashMap;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
+
 import org.bukkit.util.Vector;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 public abstract class ConfigurationTest {
     public abstract Configuration getConfig();

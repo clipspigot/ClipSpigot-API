@@ -1,11 +1,16 @@
 package org.bukkit.plugin.messaging;
 
+import static org.hamcrest.CoreMatchers.hasItems;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
+
+import java.util.Collection;
+
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.TestPlugin;
-import java.util.Collection;
 import org.junit.Test;
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
 
 public class StandardMessengerTest {
     public StandardMessenger getMessenger() {

@@ -1,7 +1,9 @@
 package org.bukkit.plugin.messaging;
 
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+
 import org.bukkit.entity.Player;
-import static org.junit.Assert.*;
 
 public class TestMessageListener implements PluginMessageListener {
     private final String channel;

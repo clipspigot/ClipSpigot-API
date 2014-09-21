@@ -1,7 +1,7 @@
 package org.bukkit.plugin;
 
-import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
 import org.bukkit.event.Event;
 import org.bukkit.event.EventException;

@@ -1,14 +1,18 @@
 package org.bukkit.configuration.file;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.Map;
+
 import org.bukkit.configuration.MemoryConfigurationTest;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TemporaryFolder;
-import static org.junit.Assert.*;
 
 public abstract class FileConfigurationTest extends MemoryConfigurationTest {
     @Rule

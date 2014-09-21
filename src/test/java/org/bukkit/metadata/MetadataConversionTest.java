@@ -15,11 +15,11 @@
 
 package org.bukkit.metadata;
 
+import static org.junit.Assert.assertEquals;
+
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.TestPlugin;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 /**
  */
