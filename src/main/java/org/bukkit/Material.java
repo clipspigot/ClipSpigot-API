@@ -235,10 +235,44 @@ public enum Material {
     COAL_BLOCK(173),
     PACKED_ICE(174),
     DOUBLE_PLANT(175),
+
+    // TODO ClipSpigot start 
+    SLIME_BLOCK(165),
+    BARRIER_BLOCK(166),
+    IRON_TRAPDOOR(167, TrapDoor.class),
+    PRISMARINE(168, MaterialData.class),
+    LANTERN_BLOCK(169),
+    STANDING_BANNER(176),
+    HANGING_BANNER(177),
+    NIGHTLIGHT_DETECTOR(178),
+    RED_SANDSTONE(179, Sandstone.class),
+    RED_SANDSTONE_STAIRS(180),
+    DOUBLE_STEP2(181, Step.class),
+    STEP2(182),
+    SPRUCE_FENCE_GATE(183, Gate.class),
+    BIRCH_FENCE_GATE(184, Gate.class),
+    JUNGLE_FENCE_GATE(185, Gate.class),
+    DARK_OAK_FENCE_GATE(186, Gate.class),
+    ACACIA_FENCE_GATE(187, Gate.class),
+    SPRUCE_FENCE(188),
+    BIRCH_FENCE(189),
+    JUNGLE_FENCE(190),
+    DARK_OAK_FENCE(191),
+    ACACIA_FENCE(192),
+    SPRUCE_DOOR_BLOCK(193),
+    BIRCH_DOOR_BLOCK(194),
+    JUNGLE_DOOR_BLOCK(195),
+    ACACIA_DOOR_BLOCK(196),
+    DARK_OAK_DOOR_BLOCK(197),
     
-    SLIME_BLOCK(165), // ClipSpigot
-    PRISMARINE(168, MaterialData.class), // ClipSpigot
-    RED_SANDSTONE(179, Sandstone.class), // ClipSpigot
+    RAW_MUTTON(423),
+    COOKED_MUTTON(424),
+    SPRUCE_DOOR(427),
+    BIRCH_DOOR(428),
+    JUNGLE_DOOR(429),
+    ACACIA_DOOR(430),
+    DARK_OAK_DOOR(431),
+    // ClipSpigot end
     
     // ----- Item Separator -----
     IRON_SPADE(256, 1, 250),
@@ -563,6 +597,8 @@ public enum Material {
             case GOLDEN_APPLE:
             case ROTTEN_FLESH:
             case SPIDER_EYE:
+            case RAW_MUTTON:
+            case COOKED_MUTTON:
                 return true;
             default:
                 return false;
@@ -782,6 +818,27 @@ public enum Material {
             case ACACIA_STAIRS:
             case DARK_OAK_STAIRS:
             case PACKED_ICE:
+            case PRISMARINE:
+            case NIGHTLIGHT_DETECTOR:
+            case RED_SANDSTONE:
+            case RED_SANDSTONE_STAIRS:
+            case DOUBLE_STEP2:
+            case STEP2:
+            case SPRUCE_FENCE_GATE:
+            case BIRCH_FENCE_GATE:
+            case JUNGLE_FENCE_GATE:
+            case DARK_OAK_FENCE_GATE:
+            case ACACIA_FENCE_GATE:
+            case SPRUCE_FENCE:
+            case BIRCH_FENCE:
+            case JUNGLE_FENCE:
+            case DARK_OAK_FENCE:
+            case ACACIA_FENCE:
+            case SPRUCE_DOOR_BLOCK:
+            case BIRCH_DOOR_BLOCK:
+            case JUNGLE_DOOR_BLOCK:
+            case ACACIA_DOOR_BLOCK:
+            case DARK_OAK_DOOR_BLOCK:
                 return true;
             default:
                 return false;
@@ -842,6 +899,11 @@ public enum Material {
             case ACTIVATOR_RAIL:
             case CARPET:
             case DOUBLE_PLANT:
+            case SLIME_BLOCK:
+            case BARRIER_BLOCK:
+            case LANTERN_BLOCK:
+            case STANDING_BANNER:
+            case HANGING_BANNER:
                 return true;
             default:
                 return false;
@@ -894,6 +956,21 @@ public enum Material {
             case LOG_2:
             case ACACIA_STAIRS:
             case DARK_OAK_STAIRS:
+            case SPRUCE_FENCE_GATE:
+            case BIRCH_FENCE_GATE:
+            case JUNGLE_FENCE_GATE:
+            case DARK_OAK_FENCE_GATE:
+            case ACACIA_FENCE_GATE:
+            case SPRUCE_FENCE:
+            case BIRCH_FENCE:
+            case JUNGLE_FENCE:
+            case DARK_OAK_FENCE:
+            case ACACIA_FENCE:
+            case SPRUCE_DOOR_BLOCK:
+            case BIRCH_DOOR_BLOCK:
+            case JUNGLE_DOOR_BLOCK:
+            case ACACIA_DOOR_BLOCK:
+            case DARK_OAK_DOOR_BLOCK:
                 return true;
             default:
                 return false;
@@ -933,6 +1010,11 @@ public enum Material {
             case LOG_2:
             case CARPET:
             case DOUBLE_PLANT:
+            case SPRUCE_FENCE:
+            case BIRCH_FENCE:
+            case JUNGLE_FENCE:
+            case DARK_OAK_FENCE:
+            case ACACIA_FENCE:
                 return true;
             default:
                 return false;
@@ -1014,6 +1096,7 @@ public enum Material {
             case COAL_BLOCK:
             case LOG_2:
             case PACKED_ICE:
+            case DOUBLE_STEP2:
                 return true;
             default:
                 return false;
